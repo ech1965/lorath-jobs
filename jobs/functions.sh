@@ -40,7 +40,7 @@ function restore()
     set -x
     pushd $SRC_DIR
     # backup repository
-    duplicacy restore $*
+    duplicacy restore -overwrite $*
 
     popd
 }
