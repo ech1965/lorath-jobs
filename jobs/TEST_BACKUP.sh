@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. $HOME/jobs/functions.sh
+. $HOME/jobs/jobs/functions.sh
 
 # Job Specific Variables
 
