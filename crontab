@@ -2,4 +2,4 @@
 #45 2 * * * /bin/bash /jobs-git/CALIBRE-KOBO.sh backup
 #15 3 * * * /bin/bash /jobs/ICYBOX-Catalogues.sh backup
 #30 4 * * * /bin/bash /jobs/ICYBOX-Photos.sh backup
-~
+
