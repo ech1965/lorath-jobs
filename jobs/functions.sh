@@ -35,6 +35,16 @@ function backup()
 }
 
 
+function restore()
+{
+    set -x
+    pushd $SRC_DIR
+    # backup repository
+    duplicacy restore $*
+
+    popd
+}
+
 function execute()
 {
     ACTION="$1"
@@ -50,6 +60,12 @@ function execute()
     if [ "z$ACTION" == "zbackup" ]
     then
         backup $ARGS
+        echo "Backup repository"
+    fi
+
+    if [ "z$ACTION" == "zrestore" ]
+    then
+        restore $ARGS
         echo "Backup repository"
     fi
 
