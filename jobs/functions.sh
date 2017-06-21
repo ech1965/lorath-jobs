@@ -12,6 +12,7 @@ TOKEN_DIR="/config/tokens"
 
 function init()
 {
+    set -x
     pushd $SRC_DIR
     # init repository
     duplicacy init -pref-dir $PREF_DIR/$JOB_NAME $JOB_NAME $CLOUD_URL
@@ -21,7 +22,7 @@ function init()
 
     #install filters
     cp $HOME/jobs/jobs/filters $PREF_DIR/$JOB_NAME/
-    pupd
+    popd
 }
 
 function execute()
