@@ -5,7 +5,7 @@
 # Job Specific Variables
 
 # Nom du Job
-JOB_NAME=${JOB_NAME:-Undef}
+JOB_NAME=TEST_BACKUP
 
 # URL du stockage
 CLOUD_URL=one://_BACKUPS_DO_NOT_TOUCH/DUPLICACY_STORAGE
