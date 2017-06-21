@@ -49,7 +49,7 @@ function execute()
 
     if [ "z$ACTION" == "zbackup" ]
     then
-        init $ARGS
+        backup $ARGS
         echo "Backup repository"
     fi
 
