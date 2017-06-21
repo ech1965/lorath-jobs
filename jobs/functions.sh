@@ -1,15 +1,19 @@
-#!bin/bash
+#!/bin/bash
+
+
+# Directory containing all pref-dirs
+PREF_DIR="/pref-dirs"
+# Directory containing OneDrive Token Files
+TOKEN_DIR="/config/tokens"
 
 
 
-# Nom du Job
-JOB_NAME=${JOB_NAME:-Undef}
 
 
 function init()
 {
     # init repository
-
+    duplicacy init -pref-dir $PREF_DIR/$JOB_NAME $JOB_NAME $CLOUD_URL
 
 }
 
