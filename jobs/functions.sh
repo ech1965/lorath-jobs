@@ -12,7 +12,6 @@ TOKEN_DIR="/config/tokens"
 
 function init()
 {
-    set -x
     pushd $SRC_DIR
     # init repository
     duplicacy init -pref-dir $PREF_DIR/$JOB_NAME $JOB_NAME $CLOUD_URL
@@ -25,6 +24,17 @@ function init()
     popd
 }
 
+function backup()
+{
+    set -x
+    pushd $SRC_DIR
+    # backup repository
+    duplicacy backup
+
+    popd
+}
+
+
 function execute()
 {
     ACTION="$1"
@@ -36,4 +46,11 @@ function execute()
         init $ARGS
         echo "Init repository"
     fi
+
+    if [ "z$ACTION" == "zbackup" ]
+    then
+        init $ARGS
+        echo "Backup repository"
+    fi
+
 }

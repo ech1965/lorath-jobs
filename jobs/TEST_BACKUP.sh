@@ -13,7 +13,7 @@ CLOUD_URL=one://_BACKUPS_DO_NOT_TOUCH/DUPLICACY_STORAGE
 # Nom du fichiercontenant les token
 TOKEN_FILE_NAME="one-token-lorath-charlier.info.json"
 SRC_DIR=/datahome/$JOB_NAME
-FILTERS_FILE=$HOME/jobs/filters
+FILTERS_FILE=$HOME/jobs/jobs/filters
 
 
 execute $*
