@@ -8,7 +8,7 @@
 JOB_NAME=LT-ETIENNE-PHOTOS-CATALOGUES
 
 # URL du stockage
-CLOUD_URL=one://_BACKUPS_DO_NOT_TOUCH/DUPLICACY_STORAGE
+CLOUD_URL=one://_BACKUPS_DO_NOT_TOUCH/DUPLICACY_STORAGE/$JOB_NAME
 
 # Nom du fichier contenant les token
 TOKEN_FILE_NAME="one-token-lorath-charlier.info.json"
