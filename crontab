@@ -1,6 +1,6 @@
-10 5 * * * /bin/bash /home/ec/jobs/jobs/TEST_BACKUP.sh backup
-#45 2 * * * /bin/bash /jobs-git/CALIBRE-KOBO.sh backup
-#15 3 * * * /bin/bash /jobs/ICYBOX-Catalogues.sh backup
-#30 4 * * * /bin/bash /jobs/ICYBOX-Photos.sh backup
+10 5 * * * /bin/bash /home/ec/jobs/jobs/LT-ETIENNE-PHOTOS-CATALOGUES.sh backup
+#15 3 * * * /bin/bash /home/ec/jobs/jobs/LT-ETIENNE-PHOTOS-PHOTOS.sh backup
+
+#10 5 * * * /bin/bash /home/ec/jobs/jobs/TEST_BACKUP.sh backup
 
 
