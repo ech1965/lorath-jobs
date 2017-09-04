@@ -1,6 +1,8 @@
 #!/bin/bash
 
+NOW=$(date "+%Y%m%d-%H-%M-%S")
 
+REPORTS=/reports
 # Directory containing all pref-dirs
 PREFS_DIR="/pref-dirs"
 # Directory containing OneDrive Token Files
