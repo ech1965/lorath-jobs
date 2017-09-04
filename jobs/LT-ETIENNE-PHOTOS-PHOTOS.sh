@@ -20,7 +20,7 @@ PREFS_DIR_NAME=$JOB_NAME
 SRC_DIR=/dataperso/LT-ETIENNE-HDD/Photos
 
 # Fichier contenant les filtres pour exclure certains fichiers du backup
-FILTERS_FILE=$HOME/jobs/jobs/filters
+FILTERS_FILE=$HOME/jobs/jobs/filters-Photos
 
 
 execute $*
